@@ -2,6 +2,7 @@
 
 An intelligent agricultural assistant that helps farmers make informed decisions about crops, market prices, pest management, and government schemes. Built with Google Gemini 2.5 Pro for comprehensive agricultural knowledge.
 
+now live at: https://kisangpt-idgi.onrender.com/
 ## Features
 
 ### Core Capabilities
