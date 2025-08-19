@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KisanGPT - Powered by Gemini 2.5 Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <header>
+      <div class="logo-container">
+        <img src="/static/logo.png" alt="KisanGPT Logo" class="main-logo" />
+      </div>
+    </header>
+
+    <main id="chat">
+      <div class="welcome">
+        <h2>Welcome to KisanGPT</h2>
+        <p>Your AI-powered agricultural assistant with advanced image analysis</p>
+        <div class="feature-grid">
+          <div class="feature-item">Best crops for your region</div>
+          <div class="feature-item">Market prices and trends</div>
+          <div class="feature-item">Farming techniques and tips</div>
+          <div class="feature-item">Pest control and disease management</div>
+          <div class="feature-item">Weather-based recommendations</div>
+          <div class="feature-item">Government schemes for farmers</div>
+        </div>
+      </div>
+
+      
+    </main>
+
+    <footer>
+      <div class="input-container">
+        <div class="input-wrapper">
+          <input id="input" type="text" placeholder="Ask about crops, prices, farming tips..." autocomplete="off" />
+          <div class="input-actions">
+            <input id="imageInput" type="file" accept="image/*,image/jpeg,image/png,image/gif,image/webp" style="display:none" />
+            <button id="imageButton" class="image-btn" title="Upload crop image for analysis">📷</button>
+            <select id="langSelect" class="lang-select" title="Speech recognition language">
+              <option value="auto" selected>Auto</option>
+              <option value="en-IN">English</option>
+              <option value="hi-IN">Hindi</option>
+              <option value="te-IN">Telugu</option>
+              <option value="ta-IN">Tamil</option>
+              <option value="bn-IN">Bengali</option>
+              <option value="gu-IN">Gujarati</option>
+              <option value="kn-IN">Kannada</option>
+              <option value="mr-IN">Marathi</option>
+              <option value="pa-IN">Punjabi</option>
+            </select>
+            <button id="inlineRecordBtn" class="inline-mic-btn" aria-pressed="false" title="Record voice">🎤</button>
+            <button id="send">
+              <span class="send-icon">➤</span>
+              <span class="loading-icon" style="display:none">⟳</span>
+            </button>
+          </div>
+        </div>
+        <div class="upload-hint-section">
+          <span class="upload-hint">Drag & drop images or paste from clipboard for instant analysis</span>
+        </div>
+      </div>
+      <div id="imagePreview" class="image-preview" style="display:none">
+        <img id="previewImg" />
+        <button id="removeImage">✕</button>
+      </div>
+    </footer>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
