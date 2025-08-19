@@ -16,5 +16,6 @@ httpx==0.27.2
 certifi==2024.7.4
 
 # LangChain stack used in `app/services/langchain_agent.py`
-langchain==0.2.16
+# langchain-google-genai 2.0.3 requires langchain-core >=0.3.13,<0.4
+langchain==0.3.14
 langchain-google-genai==2.0.3
